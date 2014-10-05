@@ -118,12 +118,12 @@ div {
 }
 
 @mixin maryland {
-  background: greenyellow;
+  background: url("gifs/md.gif");
   @include state;
 }
 
 @mixin massachusetts {
-  background: darkred;
+  background: url("gifs/ma.gif");
   @include state;
 }
 
@@ -148,7 +148,7 @@ div {
 }
 
 @mixin montana {
-  background: lightpink;
+  background: url("gifs/mt.gif");
   @include state;
 }
 
@@ -198,12 +198,12 @@ div {
 }
 
 @mixin oklahoma {
-  background: lemonchiffon;
+  background: url("gifs/ok.gif");
   @include state;
 }
 
 @mixin oregon {
-  background: darkgreen;
+  background: url("gifs/or.gif");
   @include state;
 }
 
