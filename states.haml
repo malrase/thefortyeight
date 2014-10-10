@@ -2,11 +2,8 @@
 %head
   %link{:rel=>"stylesheet", :type=>"text/css", :href=>"states.css"}
 %body
-  .container
+  .container-states
     - (1..44).each do |i|
       %div{:class => "column c" + i.to_s}
         - (1..31).each do |j|
           %div{:class => "r" + j.to_s}
-
-  %footer
-    the forty-eight. inspired by nam june paik. by rarebit & smith schwartz

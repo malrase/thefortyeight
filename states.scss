@@ -1,1709 +1,1672 @@
-div {
-  height: 20px;
-  width: 20px;
-  margin: 2px;
-  border-radius: 1px;
-}
-.container {
+.container-states {
   width: 85%;
-  margin: 20px auto;
+  margin: 4px auto;
   display: block;
-}
-
-.column {
-  float: left;
-}
-
-
-// STATES
-
-@mixin state {
-  background-size: 20px;
-  &:hover {
-    -webkit-transform: scale(10);
-    transform: scale(10);
-  }
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-// Mixins
-
-@mixin alabama {
-  background: url("gifs/al.gif");
-  @include state;
-}
-
-@mixin arizona {
-  background: url("gifs/az.gif");
-  @include state;
-}
-
-@mixin arkansas {
-  background: url("gifs/ak.gif");
-  @include state;
-}
-
-@mixin california {
-  background: url("gifs/ca.gif");
-  @include state;
-}
-
-@mixin colorado {
-  background: url("gifs/co.gif");
-  @include state;
-}
-
-@mixin connecticut {
-  background: url("gifs/ct.gif");
-  @include state;
-}
-
-@mixin delaware {
-  background: url("gifs/de.gif");
-  @include state;
-}
-
-@mixin florida {
-  background: url("gifs/fl.gif");
-  @include state;
-}
-
-@mixin georgia {
-  background: url("gifs/ga.gif");
-  @include state;
-}
-
-@mixin idaho {
-  background: url("gifs/id.gif");
-  @include state;
-}
-
-@mixin illinois {
-  background: url("gifs/il.gif");
-  @include state;
-}
-
-@mixin indiana {
-  background: url("gifs/in.gif");
-  @include state;
-}
-
-@mixin iowa {
-  background: url("gifs/ia.gif");
-  @include state;
-}
-
-@mixin kansas {
-  background: url("gifs/ks.gif");
-  @include state;
-}
-
-@mixin kentucky {
-  background: url("gifs/ky.gif");
-  @include state;
-}
-
-@mixin louisiana {
-  background: url("gifs/la.gif");
-  @include state;
-}
-
-@mixin maine {
-  background: url("gifs/me.gif");
-  @include state;
-}
-
-@mixin maryland {
-  background: url("gifs/md.gif");
-  @include state;
-}
-
-@mixin massachusetts {
-  background: url("gifs/ma.gif");
-  @include state;
-}
-
-@mixin michigan {
-  background: url("gifs/mi.gif");
-  @include state;
-}
-
-@mixin minnesota {
-  background: url("gifs/mn.gif");
-  @include state;
-}
-
-@mixin mississippi {
-  background: url("gifs/ms.gif");
-  @include state;
-}
-
-@mixin missouri {
-  background: url("gifs/mo.gif");
-  @include state;
-}
-
-@mixin montana {
-  background: url("gifs/mt.gif");
-  @include state;
-}
-
-@mixin nebraska {
-  background: url("gifs/ne.gif");
-  @include state;
-}
-
-@mixin nevada {
-  background: url("gifs/nv.gif");
-  @include state;
-}
-
-@mixin new-hampshire {
-  background: url("gifs/nh.gif");
-  @include state;
-}
-
-@mixin new-jersey {
-  background: url("gifs/nj.gif");
-  @include state;
-}
-
-@mixin new-mexico {
-  background: url("gifs/nm.gif");
-  @include state;
-}
-
-@mixin new-york {
-  background: url("gifs/ny.gif");
-  @include state;
-}
-
-@mixin north-carolina {
-  background: url("gifs/nc.gif");
-  @include state;
-}
-
-@mixin north-dakota {
-  background: url("gifs/nd.gif");
-  @include state;
-}
-
-@mixin ohio {
-  background: url("gifs/oh.gif");
-  @include state;
-}
-
-@mixin oklahoma {
-  background: url("gifs/ok.gif");
-  @include state;
-}
-
-@mixin oregon {
-  background: url("gifs/or.gif");
-  @include state;
-}
-
-@mixin pennsylvania {
-  background: url("gifs/pa.gif");
-  @include state;
-}
-
-@mixin rhode-island {
-  background: url("gifs/ri.gif");
-  @include state;
-}
-
-@mixin south-carolina {
-  background: url("gifs/sc.gif");
-  @include state;
-}
-
-@mixin south-dakota {
-  background: url("gifs/sd.gif");
-  @include state;
-}
-
-@mixin tennessee {
-  background: url("gifs/tn.gif");
-  @include state;
-}
-
-@mixin texas {
-  background: url("gifs/tx.gif");
-  @include state;
-}
-
-@mixin utah {
-  background: url("gifs/ut.gif");
-  @include state;
-}
-
-@mixin vermont {
-  background: url("gifs/vt.gif");
-  @include state;
-}
-
-@mixin virginia {
-  background: url("gifs/va.gif");
-  @include state;
-}
-
-@mixin washington {
-  background: url("gifs/wa.gif");
-  @include state;
-}
 
-@mixin west-virginia {
-  background: url("gifs/wv.gif");
-  @include state;
-}
+  div {
+    height: 19px;
+    width: 19px;
+    margin: 2px;
+    border-radius: 1px;
+  }
+
+  .column {
+    float: left;
+  }
+
+
+  // STATES
+
+  @mixin state {
+    background-size: 19px;
+    &:hover {
+      -webkit-transform: scale(10);
+      transform: scale(10);
+    }
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+
+  @mixin state2($state, $colour) {
+    background: $colour;
+    &:hover {
+      background: url("gifs/#{$state}.gif");
+      background-size: 19px;
+      -webkit-transform: scale(10);
+      transform: scale(10);
+    }
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+
+  // Mixins
+
+  @mixin alabama {
+    @include state2("al", #FF0000);
+  }
 
-@mixin wisconsin {
-  background: url("gifs/wi.gif");
-  @include state;
-}
+  @mixin arizona {
+    @include state2("az", #16256B);
+  }
+
+  @mixin arkansas {
+    @include state2("ak", #C21B2B);
+  }
+
+  @mixin california {
+    @include state2("ca", #FFD700);
+  }
+
+  @mixin colorado {
+    @include state2("co", #EEE);
+  }
 
-@mixin wyoming {
-  background: url("gifs/wy.gif");
-  @include state;
-}
+  @mixin connecticut {
+    @include state2("ct", #082985)
+  }
 
+  @mixin delaware {
+    @include state2("de", #007BA7);
+  }
 
-// Alabama
+  @mixin florida {
+    @include state2("fl", #FF8000);
+  }
 
-.c31 {
-  .r19, .r20, .r21, .r22 {
-    @include alabama;
+  @mixin georgia {
+    @include state2("ga", #B71922);
   }
-}
 
-.c32 {
-  .r19, .r20, .r21 {
-    @include alabama;
+  @mixin idaho {
+    @include state2("id", #008100);
   }
-}
 
-.c33 {
-  .r19, .r20, .r21 {
-    @include alabama;
+  @mixin illinois {
+    @include state2("il", #795A3A);
   }
-}
 
-// Alaska
-// Arizona
+  @mixin indiana {
+    @include state2("in", #FFD900);
+  }
 
-.c8 {
-  .r18, .r19, .r20, .r21, .r22, .r23 {
-    @include arizona;
+  @mixin iowa {
+    @include state2("ia", #FBEC5D);
   }
-}
 
-.c9 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include arizona;
+  @mixin kansas {
+    @include state2("ks", #FFB400);
   }
-}
 
-.c10 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include arizona;
+  @mixin kentucky {
+    @include state2("ky", #366D49);
   }
-}
 
-.c11 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include arizona;
+  @mixin louisiana {
+    @include state2("la", #FFD900);
   }
-}
 
-// Arkansas
+  @mixin maine {
+    @include state2("me", #3D703B);
+  }
 
-.c25 {
-  .r18, .r19, .r20 {
-    @include arkansas;
+  @mixin maryland {
+    @include state2("md", #000);
   }
-}
 
-.c26 {
-  .r18, .r19, .r20 {
-    @include arkansas;
+  @mixin massachusetts {
+    @include state2("ma", #C61C36);
   }
-}
 
-.c27 {
-  .r18, .r19, .r20 {
-    @include arkansas;
+  @mixin michigan {
+    @include state2("mi", #B4752E);
   }
-}
 
-.c28 {
-  .r18 {
-    @include arkansas;
+  @mixin minnesota {
+    @include state2("mn", #3A65CC);
   }
-}
 
-// California
+  @mixin mississippi {
+    @include state2("ms", #00266A);
+  }
 
-.c1 {
-  .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19 {
-    @include california;
+  @mixin missouri {
+    @include state2("mo", #00256A);
   }
-}
 
-.c2 {
-  .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20 {
-    @include california;
+  @mixin montana {
+    @include state2("mt", #FFDB00);
   }
-}
 
-.c3 {
-  .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20, .r21 {
-    @include california;
+  @mixin nebraska {
+    @include state2("ne", #777);
   }
-}
 
-.c4 {
-  .r18, .r19, .r20, .r21, .r22 {
-    @include california;
+  @mixin nevada {
+    @include state2("nv", #C0C0C0);
   }
-}
 
-.c5 {
-  .r19, .r20, .r21, .r22, .r23 {
-    @include california;
+  @mixin new-hampshire {
+    @include state2("nh", #002688);
   }
-}
 
-.c6 {
-  .r20, .r21, .r22, .r23 {
-    @include california;
+  @mixin new-jersey {
+    @include state2("nj", #F1DE7C);
   }
-}
 
-.c7 {
-  .r21, .r22, .r23 {
-    @include california;
+  @mixin new-mexico {
+    @include state2("nm", #FFFB00);
   }
-}
 
-// Colorado
+  @mixin new-york {
+    @include state2("ny", #0433FF);
+  }
 
-.c12 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include colorado;
+  @mixin north-carolina {
+    @include state2("nc", #FF2600);
   }
-}
 
-.c13 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include colorado;
+  @mixin north-dakota {
+    @include state2("nd", #E1D300);
   }
-}
 
-.c14 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include colorado;
+  @mixin ohio {
+    @include state2("oh", #0433FF);
   }
-}
 
-.c15 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include colorado;
+  @mixin oklahoma {
+    @include state2("ok", #008100);
   }
-}
 
-.c16 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include colorado;
+  @mixin oregon {
+    @include state2("or", #011582);
   }
-}
 
-.c17 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include colorado;
+  @mixin pennsylvania {
+    @include state2("pa", #3B396F);
   }
-}
 
-// Connecticut
+  @mixin rhode-island {
+    @include state2("ri", #FFC600);
+  }
 
-.c41 {
-  .r9 {
-    @include connecticut;
+  @mixin south-carolina {
+    @include state2("sc", #00406B);
   }
-}
 
-// Delaware
+  @mixin south-dakota {
+    @include state2("sd", #0073AA);
+  }
 
-.c38 {
-  .r11 {
-    @include delaware;
+  @mixin tennessee {
+    @include state2("tn", #FF8000);
   }
-}
 
-// Florida
+  @mixin texas {
+    @include state2("tx", #FF2600);
+  }
 
-.c32 {
-  .r22 {
-    @include florida;
+  @mixin utah {
+    @include state2("ut", #000000);
   }
-}
 
-.c33 {
-  .r22 {
-    @include florida;
+  @mixin vermont {
+    @include state2("vt", #6F7000);
   }
-}
 
-.c34 {
-  .r22 {
-    @include florida;
+  @mixin virginia {
+    @include state2("va", #A133AA);
   }
-}
 
-.c35 {
-  .r22 {
-    @include florida;
+  @mixin washington {
+    @include state2("wa", #008556);
   }
-}
 
-.c36 {
-  .r22 {
-    @include florida;
+  @mixin west-virginia {
+    @include state2("wv", #D0B62C);
   }
-}
 
-.c37 {
-  .r22, .r23 {
-    @include florida;
+  @mixin wisconsin {
+    @include state2("wi", #F62F46);
   }
-}
 
-.c38 {
-  .r22, .r23, .r24, .r25, .r26, .r27, .r28 {
-    @include florida;
+  @mixin wyoming {
+    @include state2("wy", #00266A);
   }
-}
+
+
+  // Alabama
 
-.c39 {
-  .r23, .r24, .r25, .r26, .r27, .r28 {
-    @include florida;
+  .c31 {
+    .r19, .r20, .r21, .r22 {
+      @include alabama;
+    }
   }
-}
 
-// Georgia
+  .c32 {
+    .r19, .r20, .r21 {
+      @include alabama;
+    }
+  }
 
-.c34 {
-  .r19, .r20, .r21 {
-    @include georgia;
+  .c33 {
+    .r19, .r20, .r21 {
+      @include alabama;
+    }
   }
-}
 
-.c35 {
-  .r19, .r20, .r21 {
-    @include georgia;
+  // Alaska
+  // Arizona
+
+  .c8 {
+    .r18, .r19, .r20, .r21, .r22, .r23 {
+      @include arizona;
+    }
   }
-}
 
-.c36 {
-  .r19, .r20, .r21 {
-    @include georgia;
+  .c9 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include arizona;
+    }
   }
-}
 
-.c37 {
-  .r20, .r21 {
-    @include georgia;
+  .c10 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include arizona;
+    }
   }
-}
 
-.c38 {
-  .r21 {
-    @include georgia;
+  .c11 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include arizona;
+    }
   }
-}
+
+  // Arkansas
 
-// Hawaii
-// Idaho
+  .c25 {
+    .r18, .r19, .r20 {
+      @include arkansas;
+    }
+  }
 
-.c6 {
-  .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11 {
-    @include idaho;
+  .c26 {
+    .r18, .r19, .r20 {
+      @include arkansas;
+    }
   }
-}
 
-.c7 {
-  .r6, .r7, .r8, .r9, .r10, .r11 {
-    @include idaho;
+  .c27 {
+    .r18, .r19, .r20 {
+      @include arkansas;
+    }
   }
-}
 
-.c8 {
-  .r8, .r9, .r10, .r11 {
-    @include idaho;
+  .c28 {
+    .r18 {
+      @include arkansas;
+    }
   }
-}
+
+  // California
 
-.c9 {
-  .r9, .r10, .r11 {
-    @include idaho;
+  .c1 {
+    .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19 {
+      @include california;
+    }
   }
-}
-// Illinois
 
-.c25 {
-  .r10, .r11 {
-    @include illinois;
+  .c2 {
+    .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20 {
+      @include california;
+    }
   }
-}
 
-.c26 {
-  .r9, .r10, .r11, .r12, .r13, .r14 {
-    @include illinois;
+  .c3 {
+    .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20, .r21 {
+      @include california;
+    }
   }
-}
 
-.c27 {
-  .r9, .r10, .r11, .r12, .r13, .r14 {
-    @include illinois;
+  .c4 {
+    .r18, .r19, .r20, .r21, .r22 {
+      @include california;
+    }
   }
-}
 
-// Indiana
+  .c5 {
+    .r19, .r20, .r21, .r22, .r23 {
+      @include california;
+    }
+  }
 
-.c28 {
-  .r10, .r11, .r12, .r13, .r14 {
-    @include indiana;
+  .c6 {
+    .r20, .r21, .r22, .r23 {
+      @include california;
+    }
   }
-}
 
-.c29 {
-  .r10, .r11, .r12, .r13, .r14 {
-    @include indiana;
+  .c7 {
+    .r21, .r22, .r23 {
+      @include california;
+    }
   }
-}
 
-// Iowa
+  // Colorado
 
-.c22 {
-  .r9, .r10 {
-    @include iowa;
+  .c12 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include colorado;
+    }
   }
-}
 
-.c23 {
-  .r9, .r10, .r11, .r12 {
-    @include iowa;
+  .c13 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include colorado;
+    }
   }
-}
 
-.c24 {
-  .r9, .r10, .r11, .r12 {
-    @include iowa;
+  .c14 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include colorado;
+    }
   }
-}
 
-.c25 {
-  .r9, .r12 {
-    @include iowa;
+  .c15 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include colorado;
+    }
   }
-}
 
-// Kansas
+  .c16 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include colorado;
+    }
+  }
 
-.c18 {
-  .r14, .r15, .r16, .r17 {
-    @include kansas;
+  .c17 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include colorado;
+    }
   }
-}
 
-.c19 {
-  .r14, .r15, .r16, .r17 {
-    @include kansas;
+  // Connecticut
+
+  .c41 {
+    .r9 {
+      @include connecticut;
+    }
   }
-}
 
-.c20 {
-  .r14, .r15, .r16, .r17 {
-    @include kansas;
+  // Delaware
+
+  .c38 {
+    .r11 {
+      @include delaware;
+    }
   }
-}
+
+  // Florida
 
-.c21 {
-  .r14, .r15, .r16, .r17 {
-    @include kansas;
+  .c32 {
+    .r22 {
+      @include florida;
+    }
   }
-}
 
-.c22 {
-  .r14, .r15, .r16, .r17 {
-    @include kansas;
+  .c33 {
+    .r22 {
+      @include florida;
+    }
   }
-}
 
-.c23 {
-  .r14, .r15, .r16, .r17 {
-    @include kansas;
+  .c34 {
+    .r22 {
+      @include florida;
+    }
   }
-}
 
+  .c35 {
+    .r22 {
+      @include florida;
+    }
+  }
 
-// Kentucky
+  .c36 {
+    .r22 {
+      @include florida;
+    }
+  }
 
-.c28 {
-  .r15 {
-    @include kentucky;
+  .c37 {
+    .r22, .r23 {
+      @include florida;
+    }
   }
-}
 
-.c29 {
-  .r15, .r16 {
-    @include kentucky;
+  .c38 {
+    .r22, .r23, .r24, .r25, .r26, .r27, .r28 {
+      @include florida;
+    }
   }
-}
 
-.c30 {
-  .r14, .r15, .r16 {
-    @include kentucky;
+  .c39 {
+    .r23, .r24, .r25, .r26, .r27, .r28 {
+      @include florida;
+    }
   }
-}
+
+  // Georgia
 
-.c31 {
-  .r14, .r15, .r16 {
-    @include kentucky;
+  .c34 {
+    .r19, .r20, .r21 {
+      @include georgia;
+    }
   }
-}
 
-.c32 {
-  .r14, .r15, .r16 {
-    @include kentucky;
+  .c35 {
+    .r19, .r20, .r21 {
+      @include georgia;
+    }
   }
-}
 
-.c33 {
-  .r14, .r15, .r16 {
-    @include kentucky;
+  .c36 {
+    .r19, .r20, .r21 {
+      @include georgia;
+    }
   }
-}
 
-// Louisiana
+  .c37 {
+    .r20, .r21 {
+      @include georgia;
+    }
+  }
 
-.c26 {
-  .r21, .r22, .r23 {
-    @include louisiana;
+  .c38 {
+    .r21 {
+      @include georgia;
+    }
   }
-}
 
-.c27 {
-  .r21, .r22, .r23 {
-    @include louisiana;
+  // Hawaii
+  // Idaho
+
+  .c6 {
+    .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11 {
+      @include idaho;
+    }
   }
-}
 
-.c28 {
-  .r22, .r23 {
-    @include louisiana;
+  .c7 {
+    .r6, .r7, .r8, .r9, .r10, .r11 {
+      @include idaho;
+    }
   }
-}
 
-.c29 {
-  .r22, .r23 {
-    @include louisiana;
+  .c8 {
+    .r8, .r9, .r10, .r11 {
+      @include idaho;
+    }
   }
-}
 
-// Maine
+  .c9 {
+    .r9, .r10, .r11 {
+      @include idaho;
+    }
+  }
+  // Illinois
 
-.c42 {
-  .r1, .r2, .r3, .r4 {
-    @include maine;
+  .c25 {
+    .r10, .r11 {
+      @include illinois;
+    }
   }
-}
 
-.c43 {
-  .r1, .r2, .r3 {
-    @include maine;
+  .c26 {
+    .r9, .r10, .r11, .r12, .r13, .r14 {
+      @include illinois;
+    }
   }
-}
 
-.c44 {
-  .r1, .r2, .r3 {
-    @include maine;
+  .c27 {
+    .r9, .r10, .r11, .r12, .r13, .r14 {
+      @include illinois;
+    }
   }
-}
 
-// Maryland
+  // Indiana
 
-.c36 {
-  .r12 {
-    @include maryland;
+  .c28 {
+    .r10, .r11, .r12, .r13, .r14 {
+      @include indiana;
+    }
   }
-}
 
-.c37 {
-  .r12 {
-    @include maryland;
+  .c29 {
+    .r10, .r11, .r12, .r13, .r14 {
+      @include indiana;
+    }
   }
-}
 
-.c38 {
-  .r12 {
-    @include maryland;
+  // Iowa
+
+  .c22 {
+    .r9, .r10 {
+      @include iowa;
+    }
   }
-}
 
-// Massachusetts
+  .c23 {
+    .r9, .r10, .r11, .r12 {
+      @include iowa;
+    }
+  }
 
-.c40 {
-  .r6, .r7 {
-    @include massachusetts;
+  .c24 {
+    .r9, .r10, .r11, .r12 {
+      @include iowa;
+    }
   }
-}
 
-.c41 {
-  .r6, .r7 {
-    @include massachusetts;
+  .c25 {
+    .r9, .r12 {
+      @include iowa;
+    }
   }
-}
 
-// Michigan
+  // Kansas
 
-.c26 {
-  .r4 {
-    @include michigan;
+  .c18 {
+    .r14, .r15, .r16, .r17 {
+      @include kansas;
+    }
   }
-}
 
-.c27 {
-  .r4 {
-    @include michigan;
+  .c19 {
+    .r14, .r15, .r16, .r17 {
+      @include kansas;
+    }
   }
-}
 
-.c28 {
-  .r4 {
-    @include michigan;
+  .c20 {
+    .r14, .r15, .r16, .r17 {
+      @include kansas;
+    }
   }
-}
 
-.c29 {
-  .r5, .r6, .r7, .r8, .r9 {
-    @include michigan;
+  .c21 {
+    .r14, .r15, .r16, .r17 {
+      @include kansas;
+    }
   }
-}
 
-.c30 {
-  .r5, .r6, .r7, .r8, .r9 {
-    @include michigan;
+  .c22 {
+    .r14, .r15, .r16, .r17 {
+      @include kansas;
+    }
   }
-}
 
-.c31 {
-  .r6, .r7, .r8, .r9 {
-    @include michigan;
+  .c23 {
+    .r14, .r15, .r16, .r17 {
+      @include kansas;
+    }
   }
-}
 
-// Minnesota
 
-.c22 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include minnesota;
+  // Kentucky
+
+  .c28 {
+    .r15 {
+      @include kentucky;
+    }
   }
-}
 
-.c23 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include minnesota;
+  .c29 {
+    .r15, .r16 {
+      @include kentucky;
+    }
   }
-}
 
-.c24 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include minnesota;
+  .c30 {
+    .r14, .r15, .r16 {
+      @include kentucky;
+    }
   }
-}
 
-// Mississippi
+  .c31 {
+    .r14, .r15, .r16 {
+      @include kentucky;
+    }
+  }
 
-.c28 {
-  .r19, .r20, .r21 {
-    @include mississippi;
+  .c32 {
+    .r14, .r15, .r16 {
+      @include kentucky;
+    }
   }
-}
 
-.c29 {
-  .r19, .r20, .r21 {
-    @include mississippi;
+  .c33 {
+    .r14, .r15, .r16 {
+      @include kentucky;
+    }
   }
-}
 
-.c30 {
-  .r19, .r20, .r21, .r22 {
-    @include mississippi;
+  // Louisiana
+
+  .c26 {
+    .r21, .r22, .r23 {
+      @include louisiana;
+    }
   }
-}
 
-// Missouri
+  .c27 {
+    .r21, .r22, .r23 {
+      @include louisiana;
+    }
+  }
 
-.c23 {
-  .r13 {
-    @include missouri;
+  .c28 {
+    .r22, .r23 {
+      @include louisiana;
+    }
   }
-}
 
-.c24 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include missouri;
+  .c29 {
+    .r22, .r23 {
+      @include louisiana;
+    }
   }
-}
+
+  // Maine
 
-.c25 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include missouri;
+  .c42 {
+    .r1, .r2, .r3, .r4 {
+      @include maine;
+    }
   }
-}
 
-.c26 {
-  .r14, .r15, .r16, .r17 {
-    @include missouri;
+  .c43 {
+    .r1, .r2, .r3 {
+      @include maine;
+    }
   }
-}
 
-.c27 {
-  .r15, .r16, .r17 {
-    @include missouri;
+  .c44 {
+    .r1, .r2, .r3 {
+      @include maine;
+    }
   }
-}
 
-.c28 {
-  .r16, .r17 {
-    @include missouri;
+  // Maryland
+
+  .c36 {
+    .r12 {
+      @include maryland;
+    }
   }
-}
 
-// Montana
+  .c37 {
+    .r12 {
+      @include maryland;
+    }
+  }
 
-.c7 {
-  .r4, .r5 {
-    @include montana;
+  .c38 {
+    .r12 {
+      @include maryland;
+    }
   }
-}
+
+  // Massachusetts
 
-.c8 {
-  .r4, .r5, .r6, .r7 {
-    @include montana;
+  .c40 {
+    .r6, .r7 {
+      @include massachusetts;
+    }
   }
-}
 
-.c9 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  .c41 {
+    .r6, .r7 {
+      @include massachusetts;
+    }
   }
-}
 
-.c10 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  // Michigan
+
+  .c26 {
+    .r4 {
+      @include michigan;
+    }
   }
-}
 
-.c11 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  .c27 {
+    .r4 {
+      @include michigan;
+    }
   }
-}
 
-.c12 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  .c28 {
+    .r4 {
+      @include michigan;
+    }
   }
-}
 
-.c13 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  .c29 {
+    .r5, .r6, .r7, .r8, .r9 {
+      @include michigan;
+    }
   }
-}
 
-.c14 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  .c30 {
+    .r5, .r6, .r7, .r8, .r9 {
+      @include michigan;
+    }
   }
-}
 
-.c15 {
-  .r4, .r5, .r6, .r7, .r8 {
-    @include montana;
+  .c31 {
+    .r6, .r7, .r8, .r9 {
+      @include michigan;
+    }
   }
-}
 
-// Nebraska
+  // Minnesota
 
-.c16 {
-  .r11, .r12 {
-    @include nebraska;
+  .c22 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include minnesota;
+    }
   }
-}
 
-.c17 {
-  .r11, .r12 {
-    @include nebraska;
+  .c23 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include minnesota;
+    }
   }
-}
 
-.c18 {
-  .r11, .r12, .r13 {
-    @include nebraska;
+  .c24 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include minnesota;
+    }
   }
-}
 
-.c19 {
-  .r11, .r12, .r13 {
-    @include nebraska;
+  // Mississippi
+
+  .c28 {
+    .r19, .r20, .r21 {
+      @include mississippi;
+    }
   }
-}
 
-.c20 {
-  .r11, .r12, .r13 {
-    @include nebraska;
+  .c29 {
+    .r19, .r20, .r21 {
+      @include mississippi;
+    }
   }
-}
 
-.c21 {
-  .r11, .r12, .r13 {
-    @include nebraska;
+  .c30 {
+    .r19, .r20, .r21, .r22 {
+      @include mississippi;
+    }
   }
-}
+
+  // Missouri
 
-.c22 {
-  .r11, .r12, .r13 {
-    @include nebraska;
+  .c23 {
+    .r13 {
+      @include missouri;
+    }
   }
-}
 
+  .c24 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include missouri;
+    }
+  }
 
-// Nevada
+  .c25 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include missouri;
+    }
+  }
 
-.c4 {
-  .r12, .r13, .r14, .r15, .r16, .r17 {
-    @include nevada;
+  .c26 {
+    .r14, .r15, .r16, .r17 {
+      @include missouri;
+    }
   }
-}
 
-.c5 {
-  .r12, .r13, .r14, .r15, .r16, .r17, .r18 {
-    @include nevada;
+  .c27 {
+    .r15, .r16, .r17 {
+      @include missouri;
+    }
   }
-}
 
-.c6 {
-  .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19 {
-    @include nevada;
+  .c28 {
+    .r16, .r17 {
+      @include missouri;
+    }
   }
-}
 
-.c7 {
-  .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20 {
-    @include nevada;
+  // Montana
+
+  .c7 {
+    .r4, .r5 {
+      @include montana;
+    }
   }
-}
 
-// New Hampshire
+  .c8 {
+    .r4, .r5, .r6, .r7 {
+      @include montana;
+    }
+  }
 
-.c41 {
-  .r2, .r3, .r4, .r5 {
-    @include new-hampshire;
+  .c9 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
   }
-}
 
-// New Jersey
+  .c10 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
+  }
 
-.c39 {
-  .r9, .r10 {
-    @include new-jersey;
+  .c11 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
   }
-}
 
-.c40 {
-  .r10 {
-    @include new-jersey;
+  .c12 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
   }
-}
 
-// New Mexico
+  .c13 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
+  }
 
-.c12 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include new-mexico;
+  .c14 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
   }
-}
 
-.c13 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include new-mexico;
+  .c15 {
+    .r4, .r5, .r6, .r7, .r8 {
+      @include montana;
+    }
   }
-}
+
+  // Nebraska
 
-.c14 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include new-mexico;
+  .c16 {
+    .r11, .r12 {
+      @include nebraska;
+    }
   }
-}
 
-.c15 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include new-mexico;
+  .c17 {
+    .r11, .r12 {
+      @include nebraska;
+    }
   }
-}
 
-.c16 {
-  .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
-    @include new-mexico;
+  .c18 {
+    .r11, .r12, .r13 {
+      @include nebraska;
+    }
   }
-}
 
-// New York
+  .c19 {
+    .r11, .r12, .r13 {
+      @include nebraska;
+    }
+  }
 
-.c34 {
-  .r6, .r7 {
-    @include new-york;
+  .c20 {
+    .r11, .r12, .r13 {
+      @include nebraska;
+    }
   }
-}
 
-.c35 {
-  .r4, .r5, .r6, .r7 {
-    @include new-york;
+  .c21 {
+    .r11, .r12, .r13 {
+      @include nebraska;
+    }
   }
-}
 
-.c36 {
-  .r4, .r5, .r6, .r7 {
-    @include new-york;
+  .c22 {
+    .r11, .r12, .r13 {
+      @include nebraska;
+    }
   }
-}
+
+
+  // Nevada
 
-.c37 {
-  .r3, .r4, .r5, .r6, .r7 {
-    @include new-york;
+  .c4 {
+    .r12, .r13, .r14, .r15, .r16, .r17 {
+      @include nevada;
+    }
   }
-}
 
-.c38 {
-  .r2, .r3, .r4, .r5, .r6, .r7 {
-    @include new-york;
+  .c5 {
+    .r12, .r13, .r14, .r15, .r16, .r17, .r18 {
+      @include nevada;
+    }
   }
-}
 
-.c39 {
-  .r2, .r3, .r4, .r5, .r6, .r7, .r8 {
-    @include new-york;
+  .c6 {
+    .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19 {
+      @include nevada;
+    }
   }
-}
 
-.c40 {
-  .r9, .r8 {
-    @include new-york;
+  .c7 {
+    .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20 {
+      @include nevada;
+    }
   }
-}
 
-// North Carolina
+  // New Hampshire
 
-.c34 {
-  .r18 {
-    @include north-carolina;
+  .c41 {
+    .r2, .r3, .r4, .r5 {
+      @include new-hampshire;
+    }
   }
-}
 
-.c35 {
-  .r17, .r18 {
-    @include north-carolina;
+  // New Jersey
+
+  .c39 {
+    .r9, .r10 {
+      @include new-jersey;
+    }
   }
-}
 
-.c36 {
-  .r17, .r18 {
-    @include north-carolina;
+  .c40 {
+    .r10 {
+      @include new-jersey;
+    }
   }
-}
 
-.c37 {
-  .r17, .r18 {
-    @include north-carolina;
+  // New Mexico
+
+  .c12 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include new-mexico;
+    }
   }
-}
 
-.c38 {
-  .r17, .r18 {
-    @include north-carolina;
+  .c13 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include new-mexico;
+    }
   }
-}
 
-.c39 {
-  .r17, .r18 {
-    @include north-carolina;
+  .c14 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include new-mexico;
+    }
   }
-}
 
-// North Dakota
+  .c15 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include new-mexico;
+    }
+  }
 
-.c16 {
-  .r4, .r5, .r6 {
-    @include north-dakota;
+  .c16 {
+    .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
+      @include new-mexico;
+    }
   }
-}
 
-.c17 {
-  .r4, .r5, .r6 {
-    @include north-dakota;
+  // New York
+
+  .c34 {
+    .r6, .r7 {
+      @include new-york;
+    }
   }
-}
 
-.c18 {
-  .r4, .r5, .r6 {
-    @include north-dakota;
+  .c35 {
+    .r4, .r5, .r6, .r7 {
+      @include new-york;
+    }
   }
-}
 
-.c19 {
-  .r4, .r5, .r6 {
-    @include north-dakota;
+  .c36 {
+    .r4, .r5, .r6, .r7 {
+      @include new-york;
+    }
   }
-}
 
-.c20 {
-  .r4, .r5, .r6 {
-    @include north-dakota;
+  .c37 {
+    .r3, .r4, .r5, .r6, .r7 {
+      @include new-york;
+    }
   }
-}
 
-.c21 {
-  .r4, .r5, .r6 {
-    @include north-dakota;
+  .c38 {
+    .r2, .r3, .r4, .r5, .r6, .r7 {
+      @include new-york;
+    }
   }
-}
 
-// Ohio
+  .c39 {
+    .r2, .r3, .r4, .r5, .r6, .r7, .r8 {
+      @include new-york;
+    }
+  }
 
-.c30 {
-  .r10, .r11, .r12, .r13 {
-    @include ohio;
+  .c40 {
+    .r9, .r8 {
+      @include new-york;
+    }
   }
-}
 
-.c31 {
-  .r10, .r11, .r12, .r13 {
-    @include ohio;
+  // North Carolina
+
+  .c34 {
+    .r18 {
+      @include north-carolina;
+    }
   }
-}
 
-.c32 {
-  .r10, .r11, .r12, .r13 {
-    @include ohio;
+  .c35 {
+    .r17, .r18 {
+      @include north-carolina;
+    }
   }
-}
 
-.c33 {
-  .r9, .r10, .r11, .r12 {
-    @include ohio;
+  .c36 {
+    .r17, .r18 {
+      @include north-carolina;
+    }
   }
-}
 
-// Oklahoma
+  .c37 {
+    .r17, .r18 {
+      @include north-carolina;
+    }
+  }
 
-.c17 {
-  .r18 {
-    @include oklahoma;
+  .c38 {
+    .r17, .r18 {
+      @include north-carolina;
+    }
   }
-}
 
-.c18 {
-  .r18 {
-    @include oklahoma;
+  .c39 {
+    .r17, .r18 {
+      @include north-carolina;
+    }
   }
-}
 
-.c19 {
-  .r18 {
-    @include oklahoma;
+  // North Dakota
+
+  .c16 {
+    .r4, .r5, .r6 {
+      @include north-dakota;
+    }
   }
-}
 
-.c20 {
-  .r18, .r19, .r20 {
-    @include oklahoma;
+  .c17 {
+    .r4, .r5, .r6 {
+      @include north-dakota;
+    }
   }
-}
 
-.c21 {
-  .r18, .r19, .r20 {
-    @include oklahoma;
+  .c18 {
+    .r4, .r5, .r6 {
+      @include north-dakota;
+    }
   }
-}
 
-.c22 {
-  .r18, .r19, .r20 {
-    @include oklahoma;
+  .c19 {
+    .r4, .r5, .r6 {
+      @include north-dakota;
+    }
   }
-}
 
-.c23 {
-  .r18, .r19, .r20 {
-    @include oklahoma;
+  .c20 {
+    .r4, .r5, .r6 {
+      @include north-dakota;
+    }
   }
-}
 
-.c24 {
-  .r18, .r19, .r20 {
-    @include oklahoma;
+  .c21 {
+    .r4, .r5, .r6 {
+      @include north-dakota;
+    }
   }
-}
 
-// Oregon
+  // Ohio
 
-.c1 {
-  .r8, .r9, .r10, .r11 {
-    @include oregon;
+  .c30 {
+    .r10, .r11, .r12, .r13 {
+      @include ohio;
+    }
   }
-}
 
-.c2 {
-  .r8, .r9, .r10, .r11 {
-    @include oregon;
+  .c31 {
+    .r10, .r11, .r12, .r13 {
+      @include ohio;
+    }
   }
-}
 
-.c3 {
-  .r8, .r9, .r10, .r11 {
-    @include oregon;
+  .c32 {
+    .r10, .r11, .r12, .r13 {
+      @include ohio;
+    }
   }
-}
 
-.c4 {
-  .r8, .r9, .r10, .r11 {
-    @include oregon;
+  .c33 {
+    .r9, .r10, .r11, .r12 {
+      @include ohio;
+    }
   }
-}
 
-.c5 {
-  .r8, .r9, .r10, .r11 {
-    @include oregon;
+  // Oklahoma
+
+  .c17 {
+    .r18 {
+      @include oklahoma;
+    }
   }
-}
 
-// Pennsylvania
+  .c18 {
+    .r18 {
+      @include oklahoma;
+    }
+  }
 
-.c33 {
-  .r8 {
-    @include pennsylvania;
+  .c19 {
+    .r18 {
+      @include oklahoma;
+    }
   }
-}
 
-.c34 {
-  .r8, .r9, .r10, .r11 {
-    @include pennsylvania;
+  .c20 {
+    .r18, .r19, .r20 {
+      @include oklahoma;
+    }
   }
-}
 
-.c35 {
-  .r8, .r9, .r10, .r11 {
-    @include pennsylvania;
+  .c21 {
+    .r18, .r19, .r20 {
+      @include oklahoma;
+    }
   }
-}
 
-.c36 {
-  .r8, .r9, .r10, .r11 {
-    @include pennsylvania;
+  .c22 {
+    .r18, .r19, .r20 {
+      @include oklahoma;
+    }
   }
-}
 
-.c37 {
-  .r8, .r9, .r10, .r11 {
-    @include pennsylvania;
+  .c23 {
+    .r18, .r19, .r20 {
+      @include oklahoma;
+    }
   }
-}
 
-.c38 {
-  .r8, .r9, .r10 {
-    @include pennsylvania;
+  .c24 {
+    .r18, .r19, .r20 {
+      @include oklahoma;
+    }
   }
-}
 
-// Rhode Island
+  // Oregon
 
-.c41 {
-  .r8 {
-    @include rhode-island;
+  .c1 {
+    .r8, .r9, .r10, .r11 {
+      @include oregon;
+    }
   }
-}
 
-// South Carolina
+  .c2 {
+    .r8, .r9, .r10, .r11 {
+      @include oregon;
+    }
+  }
 
-.c37 {
-  .r19 {
-    @include south-carolina;
+  .c3 {
+    .r8, .r9, .r10, .r11 {
+      @include oregon;
+    }
   }
-}
 
-.c38 {
-  .r19, .r20 {
-    @include south-carolina;
+  .c4 {
+    .r8, .r9, .r10, .r11 {
+      @include oregon;
+    }
   }
-}
 
-.c39 {
-  .r19 {
-    @include south-carolina;
+  .c5 {
+    .r8, .r9, .r10, .r11 {
+      @include oregon;
+    }
   }
-}
 
-// South Dakota
+  // Pennsylvania
+
+  .c33 {
+    .r8 {
+      @include pennsylvania;
+    }
+  }
 
-.c16 {
-  .r7, .r8, .r9, .r10 {
-    @include south-dakota;
+  .c34 {
+    .r8, .r9, .r10, .r11 {
+      @include pennsylvania;
+    }
   }
-}
 
-.c17 {
-  .r7, .r8, .r9, .r10 {
-    @include south-dakota;
+  .c35 {
+    .r8, .r9, .r10, .r11 {
+      @include pennsylvania;
+    }
   }
-}
 
-.c18 {
-  .r7, .r8, .r9, .r10 {
-    @include south-dakota;
+  .c36 {
+    .r8, .r9, .r10, .r11 {
+      @include pennsylvania;
+    }
   }
-}
 
-.c19 {
-  .r7, .r8, .r9, .r10 {
-    @include south-dakota;
+  .c37 {
+    .r8, .r9, .r10, .r11 {
+      @include pennsylvania;
+    }
   }
-}
 
-.c20 {
-  .r7, .r8, .r9, .r10 {
-    @include south-dakota;
+  .c38 {
+    .r8, .r9, .r10 {
+      @include pennsylvania;
+    }
   }
-}
 
-.c21 {
-  .r7, .r8, .r9, .r10 {
-    @include south-dakota;
+  // Rhode Island
+
+  .c41 {
+    .r8 {
+      @include rhode-island;
+    }
   }
-}
 
-// Tennessee
+  // South Carolina
 
-.c29 {
-  .r17, .r18 {
-    @include tennessee;
+  .c37 {
+    .r19 {
+      @include south-carolina;
+    }
   }
-}
 
-.c30 {
-  .r17, .r18 {
-    @include tennessee;
+  .c38 {
+    .r19, .r20 {
+      @include south-carolina;
+    }
   }
-}
 
-.c31 {
-  .r17, .r18 {
-    @include tennessee;
+  .c39 {
+    .r19 {
+      @include south-carolina;
+    }
   }
-}
 
-.c32 {
-  .r17, .r18 {
-    @include tennessee;
+  // South Dakota
+
+  .c16 {
+    .r7, .r8, .r9, .r10 {
+      @include south-dakota;
+    }
   }
-}
 
-.c33 {
-  .r17, .r18 {
-    @include tennessee;
+  .c17 {
+    .r7, .r8, .r9, .r10 {
+      @include south-dakota;
+    }
   }
-}
 
-.c34 {
-  .r17 {
-    @include tennessee;
+  .c18 {
+    .r7, .r8, .r9, .r10 {
+      @include south-dakota;
+    }
   }
-}
 
-// Texas
+  .c19 {
+    .r7, .r8, .r9, .r10 {
+      @include south-dakota;
+    }
+  }
 
-.c14 {
-  .r25 {
-    @include texas;
+  .c20 {
+    .r7, .r8, .r9, .r10 {
+      @include south-dakota;
+    }
   }
-}
 
-.c15 {
-  .r25, .r26 {
-    @include texas;
+  .c21 {
+    .r7, .r8, .r9, .r10 {
+      @include south-dakota;
+    }
   }
-}
 
-.c16 {
-  .r25, .r26 {
-    @include texas;
+  // Tennessee
+
+  .c29 {
+    .r17, .r18 {
+      @include tennessee;
+    }
   }
-}
 
-.c17 {
-  .r19, .r20, .r21, .r22, .r23, .r24, .r25, .r26 {
-    @include texas;
+  .c30 {
+    .r17, .r18 {
+      @include tennessee;
+    }
   }
-}
 
-.c18 {
-  .r19, .r20, .r21, .r22, .r23, .r24, .r25, .r26, .r27 {
-    @include texas;
+  .c31 {
+    .r17, .r18 {
+      @include tennessee;
+    }
   }
-}
 
-.c19 {
-  .r19, .r20, .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29 {
-    @include texas;
+  .c32 {
+    .r17, .r18 {
+      @include tennessee;
+    }
   }
-}
 
-.c20 {
-  .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29 {
-    @include texas;
+  .c33 {
+    .r17, .r18 {
+      @include tennessee;
+    }
   }
-}
 
-.c21 {
-  .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29, .r30 {
-    @include texas;
+  .c34 {
+    .r17 {
+      @include tennessee;
+    }
   }
-}
+
+  // Texas
 
-.c22 {
-  .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29, .r30, .r31 {
-    @include texas;
+  .c14 {
+    .r25 {
+      @include texas;
+    }
   }
-}
 
-.c23 {
-  .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29 {
-    @include texas;
+  .c15 {
+    .r25, .r26 {
+      @include texas;
+    }
   }
-}
 
-.c24 {
-  .r21, .r22, .r23, .r24, .r25, .r26, .r27 {
-    @include texas;
+  .c16 {
+    .r25, .r26 {
+      @include texas;
+    }
   }
-}
 
-.c25 {
-  .r21, .r22, .r23, .r24, .r25, .r26 {
-    @include texas;
+  .c17 {
+    .r19, .r20, .r21, .r22, .r23, .r24, .r25, .r26 {
+      @include texas;
+    }
   }
-}
 
-.c26 {
-  .r24 {
-    @include texas;
+  .c18 {
+    .r19, .r20, .r21, .r22, .r23, .r24, .r25, .r26, .r27 {
+      @include texas;
+    }
   }
-}
 
+  .c19 {
+    .r19, .r20, .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29 {
+      @include texas;
+    }
+  }
 
-// Utah
+  .c20 {
+    .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29 {
+      @include texas;
+    }
+  }
 
-.c8 {
-  .r12, .r13, .r14, .r15, .r16, .r17 {
-    @include utah;
+  .c21 {
+    .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29, .r30 {
+      @include texas;
+    }
   }
-}
 
-.c9 {
-  .r12, .r13, .r14, .r15, .r16, .r17 {
-    @include utah;
+  .c22 {
+    .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29, .r30, .r31 {
+      @include texas;
+    }
   }
-}
 
-.c10 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include utah
+  .c23 {
+    .r21, .r22, .r23, .r24, .r25, .r26, .r27, .r28, .r29 {
+      @include texas;
+    }
   }
-}
 
-.c11 {
-  .r13, .r14, .r15, .r16, .r17 {
-    @include utah
+  .c24 {
+    .r21, .r22, .r23, .r24, .r25, .r26, .r27 {
+      @include texas;
+    }
   }
-}
 
-// Vermont
+  .c25 {
+    .r21, .r22, .r23, .r24, .r25, .r26 {
+      @include texas;
+    }
+  }
 
-.c40 {
-  .r2, .r3, .r4, .r5 {
-    @include vermont;
+  .c26 {
+    .r24 {
+      @include texas;
+    }
   }
-}
 
-// Virginia
 
-.c34 {
-  .r15, .r16 {
-    @include virginia;
+  // Utah
+
+  .c8 {
+    .r12, .r13, .r14, .r15, .r16, .r17 {
+      @include utah;
+    }
   }
-}
 
-.c35 {
-  .r15, .r16 {
-    @include virginia;
+  .c9 {
+    .r12, .r13, .r14, .r15, .r16, .r17 {
+      @include utah;
+    }
   }
-}
 
-.c36 {
-  .r14, .r15, .r16 {
-    @include virginia;
+  .c10 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include utah
+    }
   }
-}
 
-.c37 {
-  .r13, .r14, .r15, .r16 {
-    @include virginia;
+  .c11 {
+    .r13, .r14, .r15, .r16, .r17 {
+      @include utah
+    }
   }
-}
+
+  // Vermont
 
-.c38 {
-  .r13, .r14, .r15, .r16 {
-    @include virginia;
+  .c40 {
+    .r2, .r3, .r4, .r5 {
+      @include vermont;
+    }
   }
-}
 
-.c39 {
-  .r13, .r14, .r15, .r16 {
-    @include virginia;
+  // Virginia
+
+  .c34 {
+    .r15, .r16 {
+      @include virginia;
+    }
   }
-}
 
-// Washington
+  .c35 {
+    .r15, .r16 {
+      @include virginia;
+    }
+  }
 
-.c1 {
-  .r5, .r6, .r7 {
-    @include washington;
+  .c36 {
+    .r14, .r15, .r16 {
+      @include virginia;
+    }
   }
-}
 
-.c2 {
-  .r4, .r5, .r6, .r7 {
-    @include washington;
+  .c37 {
+    .r13, .r14, .r15, .r16 {
+      @include virginia;
+    }
   }
-}
 
-.c3 {
-  .r4, .r5, .r6, .r7 {
-    @include washington;
+  .c38 {
+    .r13, .r14, .r15, .r16 {
+      @include virginia;
+    }
   }
-}
 
-.c4 {
-  .r4, .r5, .r6, .r7 {
-    @include washington;
+  .c39 {
+    .r13, .r14, .r15, .r16 {
+      @include virginia;
+    }
   }
-}
+
+  // Washington
 
-.c5 {
-  .r4, .r5, .r6, .r7 {
-    @include washington;
+  .c1 {
+    .r5, .r6, .r7 {
+      @include washington;
+    }
   }
-}
 
-// West Virginia
+  .c2 {
+    .r4, .r5, .r6, .r7 {
+      @include washington;
+    }
+  }
 
-.c33 {
-  .r13 {
-    @include west-virginia;
+  .c3 {
+    .r4, .r5, .r6, .r7 {
+      @include washington;
+    }
   }
-}
 
-.c34 {
-  .r12, .r13, .r14 {
-    @include west-virginia;
+  .c4 {
+    .r4, .r5, .r6, .r7 {
+      @include washington;
+    }
   }
-}
 
-.c35 {
-  .r12, .r13, .r14 {
-    @include west-virginia;
+  .c5 {
+    .r4, .r5, .r6, .r7 {
+      @include washington;
+    }
   }
-}
 
-.c36 {
-  .r13 {
-    @include west-virginia;
+  // West Virginia
+
+  .c33 {
+    .r13 {
+      @include west-virginia;
+    }
   }
-}
 
-// Wisconsin
+  .c34 {
+    .r12, .r13, .r14 {
+      @include west-virginia;
+    }
+  }
 
-.c25 {
-  .r5, .r6, .r7, .r8 {
-    @include wisconsin;
+  .c35 {
+    .r12, .r13, .r14 {
+      @include west-virginia;
+    }
   }
-}
 
-.c26 {
-  .r5, .r6, .r7, .r8 {
-    @include wisconsin;
+  .c36 {
+    .r13 {
+      @include west-virginia;
+    }
   }
-}
 
-.c27 {
-  .r5, .r6, .r7, .r8 {
-    @include wisconsin;
+  // Wisconsin
+
+  .c25 {
+    .r5, .r6, .r7, .r8 {
+      @include wisconsin;
+    }
   }
-}
 
-// Wyoming
+  .c26 {
+    .r5, .r6, .r7, .r8 {
+      @include wisconsin;
+    }
+  }
 
-.c10 {
-  .r9, .r10, .r11, .r12 {
-    @include wyoming;
+  .c27 {
+    .r5, .r6, .r7, .r8 {
+      @include wisconsin;
+    }
   }
-}
 
-.c11 {
-  .r9, .r10, .r11, .r12 {
-    @include wyoming;
+  // Wyoming
+
+  .c10 {
+    .r9, .r10, .r11, .r12 {
+      @include wyoming;
+    }
   }
-}
 
-.c12 {
-  .r9, .r10, .r11, .r12 {
-    @include wyoming;
+  .c11 {
+    .r9, .r10, .r11, .r12 {
+      @include wyoming;
+    }
   }
-}
 
-.c13 {
-  .r9, .r10, .r11, .r12 {
-    @include wyoming;
+  .c12 {
+    .r9, .r10, .r11, .r12 {
+      @include wyoming;
+    }
   }
-}
 
-.c14 {
-  .r9, .r10, .r11, .r12 {
-    @include wyoming;
+  .c13 {
+    .r9, .r10, .r11, .r12 {
+      @include wyoming;
+    }
   }
-}
 
-.c15 {
-  .r9, .r10, .r11, .r12 {
-    @include wyoming;
+  .c14 {
+    .r9, .r10, .r11, .r12 {
+      @include wyoming;
+    }
   }
-}
 
-footer {
-  display: none;
+  .c15 {
+    .r9, .r10, .r11, .r12 {
+      @include wyoming;
+    }
+  }
 }
