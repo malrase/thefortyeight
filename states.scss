@@ -63,7 +63,7 @@ div {
 }
 
 @mixin delaware {
-  background: turquoise;
+  background: url("gifs/de.gif");
   @include state;
 }
 
@@ -93,7 +93,7 @@ div {
 }
 
 @mixin iowa {
-  background: lightcyan;
+  background: url("gifs/ia.gif");
   @include state;
 }
 
@@ -128,12 +128,12 @@ div {
 }
 
 @mixin michigan {
-  background: darkmagenta;
+  background: url("gifs/mi.gif");
   @include state;
 }
 
 @mixin minnesota {
-  background: lightsalmon;
+  background: url("gifs/mn.gif");
   @include state;
 }
 
@@ -143,7 +143,7 @@ div {
 }
 
 @mixin missouri {
-  background: deeppink;
+  background: url("gifs/mo.gif");
   @include state;
 }
 
@@ -213,7 +213,7 @@ div {
 }
 
 @mixin rhode-island {
-  background: peachpuff;
+  background: url("gifs/ri.gif");
   @include state;
 }
 
@@ -248,7 +248,7 @@ div {
 }
 
 @mixin virginia {
-  background: orchid;
+  background: url("gifs/va.gif");
   @include state;
 }
 
@@ -258,7 +258,7 @@ div {
 }
 
 @mixin west-virginia {
-  background: cyan;
+  background: url("gifs/wv.gif");
   @include state;
 }
 
@@ -273,7 +273,7 @@ div {
 }
 
 
-// Alabama 
+// Alabama
 
 .c31 {
   .r19, .r20, .r21, .r22 {
@@ -293,7 +293,7 @@ div {
   }
 }
 
-// Alaska 
+// Alaska
 // Arizona
 
 .c8 {
@@ -346,7 +346,7 @@ div {
   }
 }
 
-// California 
+// California
 
 .c1 {
   .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19 {
@@ -390,7 +390,7 @@ div {
   }
 }
 
-// Colorado 
+// Colorado
 
 .c12 {
   .r13, .r14, .r15, .r16, .r17 {
@@ -428,7 +428,7 @@ div {
   }
 }
 
-// Connecticut 
+// Connecticut
 
 .c41 {
   .r9 {
@@ -472,7 +472,7 @@ div {
 
 .c36 {
   .r22 {
-    @include florida; 
+    @include florida;
   }
 }
 
@@ -494,7 +494,7 @@ div {
   }
 }
 
-// Georgia 
+// Georgia
 
 .c34 {
   .r19, .r20, .r21 {
@@ -526,8 +526,8 @@ div {
   }
 }
 
-// Hawaii 
-// Idaho 
+// Hawaii
+// Idaho
 
 .c6 {
   .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11 {
@@ -552,7 +552,7 @@ div {
     @include idaho;
   }
 }
-// Illinois 
+// Illinois
 
 .c25 {
   .r10, .r11 {
@@ -572,7 +572,7 @@ div {
   }
 }
 
-// Indiana 
+// Indiana
 
 .c28 {
   .r10, .r11, .r12, .r13, .r14 {
@@ -586,7 +586,7 @@ div {
   }
 }
 
-// Iowa 
+// Iowa
 
 .c22 {
   .r9, .r10 {
@@ -612,7 +612,7 @@ div {
   }
 }
 
-// Kansas 
+// Kansas
 
 .c18 {
   .r14, .r15, .r16, .r17 {
@@ -651,7 +651,7 @@ div {
 }
 
 
-// Kentucky 
+// Kentucky
 
 .c28 {
   .r15 {
@@ -695,7 +695,7 @@ div {
   .r21, .r22, .r23 {
     @include louisiana;
   }
-} 
+}
 
 .c27 {
   .r21, .r22, .r23 {
@@ -715,7 +715,7 @@ div {
   }
 }
 
-// Maine 
+// Maine
 
 .c42 {
   .r1, .r2, .r3, .r4 {
@@ -755,7 +755,7 @@ div {
   }
 }
 
-// Massachusetts 
+// Massachusetts
 
 .c40 {
   .r6, .r7 {
@@ -769,7 +769,7 @@ div {
   }
 }
 
-// Michigan 
+// Michigan
 
 .c26 {
   .r4 {
@@ -807,7 +807,7 @@ div {
   }
 }
 
-// Minnesota 
+// Minnesota
 
 .c22 {
   .r4, .r5, .r6, .r7, .r8 {
@@ -827,7 +827,7 @@ div {
   }
 }
 
-// Mississippi 
+// Mississippi
 
 .c28 {
   .r19, .r20, .r21 {
@@ -847,7 +847,7 @@ div {
   }
 }
 
-// Missouri 
+// Missouri
 
 .c23 {
   .r13 {
@@ -885,7 +885,7 @@ div {
   }
 }
 
-// Montana 
+// Montana
 
 .c7 {
   .r4, .r5 {
@@ -941,7 +941,7 @@ div {
   }
 }
 
-// Nebraska 
+// Nebraska
 
 .c16 {
   .r11, .r12 {
@@ -986,7 +986,7 @@ div {
 }
 
 
-// Nevada 
+// Nevada
 
 .c4 {
   .r12, .r13, .r14, .r15, .r16, .r17 {
@@ -1012,7 +1012,7 @@ div {
   }
 }
 
-// New Hampshire 
+// New Hampshire
 
 .c41 {
   .r2, .r3, .r4, .r5 {
@@ -1020,7 +1020,7 @@ div {
   }
 }
 
-// New Jersey 
+// New Jersey
 
 .c39 {
   .r9, .r10 {
@@ -1034,7 +1034,7 @@ div {
   }
 }
 
-// New Mexico 
+// New Mexico
 
 .c12 {
   .r18, .r19, .r20, .r21, .r22, .r23, .r24 {
@@ -1110,7 +1110,7 @@ div {
   }
 }
 
-// North Carolina 
+// North Carolina
 
 .c34 {
   .r18 {
@@ -1148,7 +1148,7 @@ div {
   }
 }
 
-// North Dakota 
+// North Dakota
 
 .c16 {
   .r4, .r5, .r6 {
@@ -1186,7 +1186,7 @@ div {
   }
 }
 
-// Ohio 
+// Ohio
 
 .c30 {
   .r10, .r11, .r12, .r13 {
@@ -1212,7 +1212,7 @@ div {
   }
 }
 
-// Oklahoma 
+// Oklahoma
 
 .c17 {
   .r18 {
@@ -1262,7 +1262,7 @@ div {
   }
 }
 
-// Oregon 
+// Oregon
 
 .c1 {
   .r8, .r9, .r10, .r11 {
@@ -1294,7 +1294,7 @@ div {
   }
 }
 
-// Pennsylvania 
+// Pennsylvania
 
 .c33 {
   .r8 {
@@ -1332,7 +1332,7 @@ div {
   }
 }
 
-// Rhode Island 
+// Rhode Island
 
 .c41 {
   .r8 {
@@ -1340,7 +1340,7 @@ div {
   }
 }
 
-// South Carolina 
+// South Carolina
 
 .c37 {
   .r19 {
@@ -1360,7 +1360,7 @@ div {
   }
 }
 
-// South Dakota 
+// South Dakota
 
 .c16 {
   .r7, .r8, .r9, .r10 {
@@ -1398,7 +1398,7 @@ div {
   }
 }
 
-// Tennessee 
+// Tennessee
 
 .c29 {
   .r17, .r18 {
@@ -1436,7 +1436,7 @@ div {
   }
 }
 
-// Texas 
+// Texas
 
 .c14 {
   .r25 {
@@ -1517,7 +1517,7 @@ div {
 }
 
 
-// Utah 
+// Utah
 
 .c8 {
   .r12, .r13, .r14, .r15, .r16, .r17 {
@@ -1543,7 +1543,7 @@ div {
   }
 }
 
-// Vermont 
+// Vermont
 
 .c40 {
   .r2, .r3, .r4, .r5 {
@@ -1589,7 +1589,7 @@ div {
   }
 }
 
-// Washington 
+// Washington
 
 .c1 {
   .r5, .r6, .r7 {
@@ -1621,7 +1621,7 @@ div {
   }
 }
 
-// West Virginia 
+// West Virginia
 
 .c33 {
   .r13 {
@@ -1647,7 +1647,7 @@ div {
   }
 }
 
-// Wisconsin 
+// Wisconsin
 
 .c25 {
   .r5, .r6, .r7, .r8 {
@@ -1708,27 +1708,3 @@ div {
 footer {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
